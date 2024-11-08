@@ -1,0 +1,57 @@
+{
+    "SUMMARY": "The script is a YAML-based project documentation tool that uses OpenAI and Microsoft Autogen Agents to scan a repository and generate documentation. It initializes directories for reports, feedback, and logs, and sets up logging. It reads a YAML file for prompts, loads environment variables, and configures OpenAI settings. The script processes files in a specified directory, calculates MD5 hashes, counts tokens, and uses agents to analyze the code. It generates reports in JSON format, logs errors, and prints summaries of the scan.",
+    "DFD": "```mermaid\nflowchart TD\n  A[Start Script] --> B[Load YAML Prompts]\n  B --> C[Initialize Directories]\n  C --> D[Set Up Logging]\n  D --> E[Load Environment Variables]\n  E --> F[Configure OpenAI Settings]\n  F --> G[Process Files in Directory]\n  G --> H[Calculate MD5 Hash]\n  G --> I[Count Tokens]\n  G --> J[Use Agents for Analysis]\n  J --> K[Generate JSON Reports]\n  J --> L[Log Errors]\n  J --> M[Print Scan Summaries]\n```",
+    "ERD": "```mermaid\nerDiagram\n  SCRIPT ||--o{ DIRECTORY : processes\n  SCRIPT ||--o{ FILE : processes\n  FILE ||--|{ YAML_PROMPTS : uses\n  FILE ||--|{ ENV_VARIABLES : uses\n  FILE ||--o{ AGENTS : analyzed_by\n  AGENTS ||--o{ JSON_REPORT : generates\n  AGENTS ||--o{ LOG : generates\n  AGENTS ||--o{ SUMMARY : generates\n```",
+    "DataDictionary": {
+        "Script": {
+            "reportsdir": "Directory to store JSON output reports.",
+            "feedbackdir": "Directory to store feedback JSON output.",
+            "logsdir": "Directory to store log files.",
+            "yamlfile": "Path to the YAML file containing prompts.",
+            "fecha1": "Timestamp for log file naming.",
+            "temperature": "Temperature setting for OpenAI model.",
+            "context_size": "Maximum token context size.",
+            "semilla": "Random seed for trials."
+        },
+        "Functions": {
+            "parse_arguments": "Parses command-line arguments.",
+            "load_yaml_file": "Loads YAML file containing prompts.",
+            "read_file": "Reads a file and determines its encoding.",
+            "count_tokens": "Counts tokens in a given text.",
+            "calculate_md5": "Calculates MD5 hash of a file's contents.",
+            "save_vulnerability_report": "Saves the vulnerability report in JSON format.",
+            "save_feedback_report": "Saves feedback report in JSON format.",
+            "format_duration": "Formats the total duration of the scan.",
+            "banner_full": "Prints a summary banner after the scan is completed.",
+            "banner_small": "Prints a concise summary banner during the scan.",
+            "main": "Initiates the scanning process."
+        }
+    },
+    "codecontext": {
+        "Initialization": {
+            "Description": "Sets up directories, logging, and loads configuration.",
+            "Actions": "Creates directories for reports, feedback, and logs. Sets up logging mechanism. Loads YAML prompts and environment variables."
+        },
+        "File Processing": {
+            "Description": "Processes files in the specified directory.",
+            "Actions": "Reads files, calculates MD5 hashes, counts tokens, and uses agents for analysis."
+        },
+        "Agent Interaction": {
+            "Description": "Uses OpenAI and Microsoft Autogen Agents for code analysis.",
+            "Actions": "Configures agents with prompts and settings. Initiates chat for analysis. Collects feedback and generates reports."
+        },
+        "Reporting": {
+            "Description": "Generates and saves reports based on analysis.",
+            "Actions": "Saves vulnerability and feedback reports in JSON format. Logs errors and prints scan summaries."
+        }
+    },
+    "filename": "genmermaid.py",
+    "file_path": "test",
+    "scan_date": "2024-11-08T16:43:53",
+    "scan_duration": 12.101427,
+    "md5_hash": "3805cb25b0ea00fd34951182da4252eb",
+    "total_tokens": 6207,
+    "total_cost": 0.0217575,
+    "lines_of_code": 382,
+    "scan_type": "DOCUMENTING SOURCE CODE IN MERMAID.JS\n"
+}

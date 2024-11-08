@@ -1,0 +1,8 @@
+
+chardet==5.2.0
+openai==1.53.0
+pyautogen==0.3.1
+pydotenv==0.0.7
+python-dotenv==1.0.1
+PyYAML==6.0.2
+tiktoken==0.8.0
