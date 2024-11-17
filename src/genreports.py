@@ -6,7 +6,7 @@ This script is a command-line interface tool designed to convert the JSON into m
 
 Author Information:
 - Author: Nic Cravino
-- Email: spidernic@me.com / ncravino@mac.com
+- Email: spidernic@me.com 
 - LinkedIn: https://www.linkedin.com/in/nic-cravino
 - Date: October 26, 2024
 

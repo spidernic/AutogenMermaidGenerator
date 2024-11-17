@@ -21,7 +21,7 @@ License: Apache License 2.0
 
 Author Information:
 - Author: Nic Cravino
-- Email: spidernic@me.com / ncravino@mac.com
+- Email: spidernic@me.com 
 - LinkedIn: https://www.linkedin.com/in/nic-cravino
 - Date: October 26, 2024
 

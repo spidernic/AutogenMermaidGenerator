@@ -229,7 +229,7 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ## Author Information
 
 - **Author**: Nic Cravino
-- **Email**: [spidernic@me.com](mailto\:spidernic@me.com) / [ncravino@mac.com](mailto\:ncravino@mac.com)
+- **Email**: [spidernic@me.com](mailto\:spidernic@me.com) 
 - **LinkedIn**: [Nic Cravino](https://www.linkedin.com/in/nic-cravino)
 - **Date**: October 26, 2024
 
